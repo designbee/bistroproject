@@ -1,0 +1,279 @@
+<html>
+<head>
+	<title>Le Petit Bistro | Contact </title>	
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <!-- reset CSS -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+
+	 <!-- main CSS -->
+	<link rel="stylesheet" type="text/css" href="css/main.css" />		 
+
+	<!-- jquery version 1.10.2 -->
+	<script type="text/javascript" src="js/jqueryv1.10.2.js"></script>
+
+	<!-- google map -->
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+
+	<!-- our customized js -->
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<header> 
+		<div class="container">
+			<div id="logo">
+				<a href="home.html" id="lnk_logo">
+					<img src="images/templogo2.png" alt="Le Petit Bistro" />
+				</a>
+			</div>
+			<nav>
+				<ul id="header_menu">
+					<li>
+						<a href="home.html" class="mnu_item">Home</a>
+					</li>							
+					<li>
+						<a href="about.html" class="mnu_item">About</a>
+					</li>
+					<li>
+						<a href="foodMenu.html" class="mnu_item">Menu</a>
+					</li>
+					<li>
+						<a href="special.html" class="mnu_item">Special</a>
+					</li>
+					<li>
+						<a href="event.html" class="mnu_item">Event</a>
+					</li>	
+					<li>
+						<a href="contact.html" class="mnu_item active">Contact</a>
+					</li>					
+				</ul> <!-- / #header_menu -->
+			</nav>
+		</div> <!-- / .container -->
+	</header>
+	<section>
+		<div class="container">
+			<!-- contact page starts here -->
+			<article id="contact" class="content">
+				<div id="contact_image">
+					<img src="images/contact/contact_header.png" alt="contact-image" />
+				</div><!-- /#contact_image -->
+				<div class="form_mainWrapper">
+					<div class="form_wrapper">						
+						<form method="post" action="">
+							<div class="form1">						
+								<label for="first_name">First Name:</label>
+								<input class="boxline" type="text" name="first_name" id="first_name" placeholder="Your first name"  required autofocus><br>
+								<label for="last_name">Last Name:</label>
+								<input class="boxline" type="text" name="last_name" id="last_name" placeholder="Your last name" required><br>
+								<label for="email">E-mail:</label>
+								<input class="boxline"  type="email" name="email" id="email"  placeholder="Your email" required><br>
+							</div><!-- form1 -->							
+							<div class="form2">
+								<label id="lblComments" for="comments">Comments:</label>
+								<!-- <input class="boxline" type="text" name="comments" id="comments"  placeholder="Your Comments" required> -->
+								<textarea rows="4" cols="20" required> </textarea>	
+							</div> <!-- form2 -->
+							<div class="clear"></div>		
+							<!--<input type="image" src="img/arrow.png" alt="Submit" >-->						
+							<div id="contact_buttonWrapper">
+								<input type="submit" id="contact_submit" value="Submit">
+							</div><!-- contact_buttonWrapper -->
+							<!-- <input type="reset" id="contact_reset" value="Reset Fields"><br> -->
+						</form> <!--End of Contact Form -->						
+					</div>
+					<div id="contact_title">
+						<img src="images/contact/contact-tag.png" alt="contact-header" />
+					</div>
+				</div> <!-- #form_mainWrapper -->
+				
+				<div id="contact_map">
+					<ul id="locations">				   	
+					   	<!------- Toronto Location ----- -->
+		        			<li data-geo-lat="43.6548" data-geo-long="-79.3806">
+		          				<h3 class="contact-h3">Toronto</h3>
+		          				
+		          				<p>Eaton Centre</p>
+		          				<p class="longdesc">
+		          					<strong>Toronto Eaton Centre </strong>
+		          					<br/>
+		          					220 Yonge St, Toronto, ON M5B 2H1, Canada. Le Petit Bistro is located on the first floor. Entrance North.
+		          					<br/> <br/>
+		          					<strong>Career:</strong>
+		          					<br/>
+		          					Event Planner
+		          					<br>
+		          					Marketing Assistant
+		          				</p>		          				
+		        			</li>
+		        
+				        <!------- Vaughan Location ----- -->
+
+		        			<li data-geo-lat="43.8258" data-geo-long="-79.5387">
+		          				<h3 class="contact-h3">Vaughan</h3>
+		          				<p>Vaughan Mills Shopping Centre</p>
+		         				<p class="longdesc">
+		         					<strong>Vaughan Mills Shopping Centre</strong>
+		         					<br/>
+		         					Vaughan Mills Shopping Centre. 1 Bass Pro Mills, Vaughan, ON Canada.  Le Petit Bistro is located on Main Entrance
+									<br/> <br/>
+		          					<strong>Career:</strong>
+		          					<br/>
+		          					Experienced Chef(Baking specialist)
+		         				</p>
+		        			</li>	        
+				        <!------- Mississauga Location ----- -->
+		        			<li data-geo-lat="43.602" data-geo-long="-79.639">
+		          				<h3 class="contact-h3">Mississauga</h3>
+		          				<p>Square One Shopping Centre</p>
+		          				<p class="longdesc">
+		          					<strong>Square One Shopping Centre</strong>
+		          					<br/>
+		          					Square One Shopping Centre. 100 City Centre Drive, Mississauga, ON L5B 2C9, Canada. Le Petit Bistro is located on the South Entrance
+		          					<br/> <br/>
+		          					<strong>Career:</strong>
+		          					<br/>
+		          					General Manager
+		          					<br/>
+		          					Business Administration Intern
+		          				</p>
+		        			</li>
+				        <!------- Niagara Location ----- -->
+		       				<li data-geo-lat="43.0929" data-geo-long="-79.0762">
+		          				<h3 class="contact-h3">Niagara Falls</h3>
+		          				<p>Clifton Hill</p>
+		          				<p class="longdesc">
+		          					<strong>Clifton Hill</strong>
+		          					<br/>
+		          					Clifton Hill Niagara Falls, ON L2E 6S8, Canada
+		          					<br/> <br/>
+		          					<strong>Career:</strong>
+		          					<br/>
+		          					Event Co-ordinator
+		          				</p>
+		        	
+		        			</li>	        
+		     			</ul>
+				    <div id="map_canvas"></div>
+				    <div id="more-info">
+					    <div>     
+					        <h2>More Info</h2>
+					        <p>Hover over location on the left. (JavaScript must be enabled)</p>     
+					    </div>
+				   </div>
+				</div>
+			</article><!-- /#contact -->
+			
+			            
+		</div>  <!-- / .container -->
+	</section>
+
+	<footer>
+		<div class="container" id="footer_menu">
+			<ul>
+				<li>Le Petit Bistro</li>
+				<li><a href="home.html" class="footer_mnu_item">Home</a></li>
+				<li><a href="about.html" class="footer_mnu_item">About Us</a></li>	
+				<li><a href="foodMenu.html" class="footer_mnu_item">Menu</a></li>			
+			</ul>
+			<ul>
+				<li>Special</li>
+				<li><a href="event.html" class="footer_mnu_item">Events</a></li>
+				<li><a href="gift.html" class="footer_mnu_item">Gift Cards</a></li>
+				<li><a href="special.html" class="footer_mnu_item">Game Zone</a></li>
+			</ul>
+			<ul>
+				<li>Contact Us</li>
+				<li><a href="contact.html" class="footer_mnu_item">Write to us</a></li>
+				<li><a href="contact.html" class="footer_mnu_item">Locate Us</a></li>
+				<li><a href="contact.html" class="footer_mnu_item">Join Our Team</a></li>
+			</ul>
+			<ul>
+				<li>Head Office:</li>
+				<li>58 Cupcake Street</li>
+				<li>Macroon Ave</li>
+				<li>Ontario, P8N 2Z6</li>
+				<li>P: 801-568-8200</li>
+				<li>TTY: 658-468-8751</li>
+			</ul>
+		</div>
+	</footer>
+
+  <!-- script for map -->
+	<script type='text/javascript'>
+  
+    $(function() {
+    
+      var Toronto = new google.maps.LatLng(43.6548, -79.3806),
+          pointToMoveTo, 
+          first = true,
+          curMarker = new google.maps.Marker({}),
+          $el;
+      
+      var myOptions = {
+          zoom: 10,
+          center: Toronto,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+      
+      var map = new google.maps.Map($("#map_canvas")[0], myOptions);
+    
+      $("#locations li").mouseenter(function() {
+      
+        $el = $(this);
+                
+        if (!$el.hasClass("hover")) {
+        
+          $("#locations li").removeClass("hover");
+          $el.addClass("hover");
+        
+          if (!first) { 
+            
+            // Clear current marker
+            curMarker.setMap(); 
+            
+            // Set zoom back to Chicago level
+            // map.setZoom(10);
+          }
+          
+          // Move (pan) map to new location
+          pointToMoveTo = new google.maps.LatLng($el.attr("data-geo-lat"), $el.attr("data-geo-long"));
+          map.panTo(pointToMoveTo);
+          
+          // Add new marker
+          curMarker = new google.maps.Marker({
+              position: pointToMoveTo,
+              map: map,
+              icon: "images/marker.png"
+          });
+          
+          // On click, zoom map
+          google.maps.event.addListener(curMarker, 'click', function() {
+             map.setZoom(14);
+          });
+          
+          // Fill more info area
+          $("#more-info")
+            .find("h2")
+              .html($el.find("h3").html())
+              .end()
+            .find("p")
+              .html($el.find(".longdesc").html());
+          
+          // No longer the first time through (re: marker clearing)        
+          first = false; 
+        }
+        
+      });
+      
+      $("#locations li:first").trigger("mouseenter");
+      
+    });
+
+  </script>
+
+
+</body>
+</html>

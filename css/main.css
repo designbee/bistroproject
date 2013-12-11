@@ -1,0 +1,1112 @@
+/* -----------
+	Custom CSS - Team 3
+	------------*/
+
+/* --- Added by Reshma & Jacqueline --- */
+
+@font-face {
+	font-family: 'flexslider-icon';
+	src:url('../fonts/flexslider-font/flexslider-icon.eot');
+	src:url('../fonts/flexslider-font/flexslider-icon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/flexslider-font/flexslider-icon.woff') format('woff'),
+		url('../fonts/flexslider-font/flexslider-icon.ttf') format('truetype'),
+		url('../fonts/flexslider-font/flexslider-icon.svg#flexslider-icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'second_chances';
+    src: url('../fonts/second_chances/kgsecondchancessolid-webfont.eot');
+    src: url('../fonts/second_chances/kgsecondchancessolid-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/second_chances/kgsecondchancessolid-webfont.woff') format('woff'),
+         url('../fonts/second_chances/kgsecondchancessolid-webfont.ttf') format('truetype'),
+         url('../fonts/second_chances/kgsecondchancessolid-webfont.svg#kg_second_chances_solidRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sketch';
+    src: url('../fonts/sketch/kgsecondchancessketch-webfont.eot');
+    src: url('../fonts/sketch/kgsecondchancessketch-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sketch/kgsecondchancessketch-webfont.woff') format('woff'),
+         url('../fonts/sketch/kgsecondchancessketch-webfont.ttf') format('truetype'),
+         url('../fonts/sketch/kgsecondchancessketch-webfont.svg#kg_second_chances_sketchRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*
+@font-face {
+    font-family: 'handwritting';
+    src: url('../fonts/handwritting/chalk-hand-lettering-shaded_demo.eot');
+    src: url('../fonts/handwritting/chalk-hand-lettering-shaded_demo.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/handwritting/chalk-hand-lettering-shaded_demo.woff') format('woff'),
+         url('../fonts/handwritting/chalk-hand-lettering-shaded_demo.ttf') format('truetype'),
+         url('../fonts/handwritting/chalk-hand-lettering-shaded_demo.svg#chalk-hand-lettering-shadedRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}*/
+
+@font-face {
+    font-family: 'texgyreheros';
+    src: url('../fonts/texgyreheros_regular_macroman/texgyreheros-regular-webfont.eot');
+    src: url('../fonts/texgyreheros_regular_macroman/texgyreheros-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/texgyreheros_regular_macroman/texgyreheros-regular-webfont.woff') format('woff'),
+         url('../fonts/texgyreheros_regular_macroman/texgyreheros-regular-webfont.ttf') format('truetype'),
+         url('../fonts/texgyreheros_regular_macroman/texgyreheros-regular-webfont.svg#texgyreherosregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kgnexttome';
+    src: url('../fonts/kgnexttome/kgnexttomesolid.eot');
+    src: url('../fonts/kgnexttome/kgnexttomesolid.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kgnexttome/kgnexttomesolid.woff') format('woff'),
+         url('../fonts/kgnexttome/kgnexttomesolid.ttf') format('truetype'),
+         url('../fonts/kgnexttome/kgnexttomesolid.svg#kg_next_to_me_solidregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body{
+	padding: 0px;
+	margin: 0px;
+	background: #efefec;
+	background-image: url('../images/bg2-1.png');
+	font-family: Arial, sans-serif; 
+}
+
+.container{
+	width: 950px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+header{
+	width: 100%;
+	background: url('../images/ripped-paper2.png') no-repeat;
+	background-position: 0px 32px;
+	z-index: 99;
+	position:absolute;
+	opacity: 1;
+	margin-top:-24px;
+
+}
+
+
+#logo,nav{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+#logo{
+	margin-left: 25px;
+	width:130px;
+
+}
+
+#logo img {
+	width:100%;
+}
+
+nav{
+	margin-bottom: 15px;
+	margin-left:40px;
+}
+
+
+#header_menu{
+	list-style-type: none;
+}
+
+#header_menu li{
+	display: inline;
+	margin: 0px 33px;
+}
+
+#header_menu li a {
+	text-decoration: none;
+	color: #979797;
+	font-family: kgnexttome;
+	font-size:12px;
+
+}
+
+#header_menu li a.active, #header_menu li a:hover{
+	color: #a06239;
+}
+
+.content{
+	min-height: 950px;
+	position:relative;
+	z-index:90;
+}
+
+
+footer{
+	background: #443b3c;
+	padding-top: 55px;
+	padding-bottom: 75px;
+	font-size: 12px;
+	position:relative;
+	bottom:0;
+	margin-top:50px;	
+}
+
+#footer_menu ul{
+	display: inline-block;
+	width: 155px;
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px 38px;
+	vertical-align: top;
+	color: #ffffff;
+}
+
+#footer_menu ul li{
+	line-height: 1.5em;
+}
+
+#footer_menu ul li:first-child{
+	border-bottom: 1px solid #ffffff;
+	margin-bottom: 10px;
+	padding-bottom:10px;
+}
+
+#footer_menu ul li a{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+ /*------------------- template ends here -------------------------*/
+
+
+
+
+/* -------------------- home starts here --------------------------*/
+
+
+
+#special_slider{
+	background: url('../images/todaySpecial.png') no-repeat center;
+	height: 225px;
+	position: relative;
+	top: -74px;
+	z-index:8;
+}
+
+#home_event{
+	border-right: dashed 3px #1a1a1a;
+	width: 300px;
+	float: left;
+	margin-left: 20px;
+}
+#home_evnt{
+	background:url('../images/home/btn-event.png');
+	width: 162px;
+	height: 53px;
+	float: left;
+	margin-left: 70px;
+	margin-top: 20px;
+	border: none;
+	background-repeat: no-repeat;
+}
+#home_imgevent {
+
+	margin-left: 75px; 
+}
+
+#home_contest {
+	width: 300px;
+	float: left;
+}
+#home_cont {
+background:url('../images/home/btn-contest.png');
+	width: 162px;
+	height: 53px;
+	margin-left: 65px;
+	margin-top: 20px;
+	border: none;
+	background-repeat: no-repeat;
+
+	
+}
+#home_imgcont{
+
+	margin-left: 70px; 
+}
+#home_giftcard {
+	border-left: dashed 3px #1a1a1a;
+	width: 300px;
+	float: left;
+}
+
+#home_gift {
+	background:url('../images/home/btn-giftcard.png');
+	width: 162px;
+	height: 53px;
+	margin-left: 70px;
+	margin-top: 20px;
+	border: none;
+	background-repeat: no-repeat;
+}
+#home_imggift {
+	margin-left: 72px; 
+}
+
+#home_flex_wrapper
+{
+	background: url('../images/todaySpecial.png') no-repeat center;
+	height: 225px;
+	position: relative;
+	top: -74px;
+	z-index:8;
+}
+
+.flexslider{
+	
+	border:none;
+	background:transparent;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+	width:703px;
+	margin:0 auto;	
+}
+
+.flexslider .slides {
+	/*margin-left:70px;*/
+	margin-top:72px;
+}
+
+.flexslider .slides img 
+{
+	width: 130px;
+	vertical-align:middle; 
+}
+
+.flex-direction-nav a {
+	margin: 6px 0 0;
+}
+
+#home_icon_wrapper {
+	margin-top:-38px;
+}
+#home_event{
+	border-right: dashed 3px #1a1a1a;
+	width: 300px;
+	float: left;
+	margin-left: 20px;
+}
+
+.home_links {
+	width: 162px;
+	height: 53px;
+	float: left;
+	margin-left: 70px;
+	margin-top: 20px;
+	border: none;
+	background-repeat: no-repeat;
+
+}
+#home_evnt{
+	background:url('../images/home/btn-event.png')no-repeat;
+
+}
+#home_imgevent {
+	margin-left: 75px; 
+	width: 150px;
+}
+
+#home_contest {
+	width: 300px;
+	float: left;
+}
+#home_cont {
+	background:url('../images/home/btn-contest.png')no-repeat;	
+}
+#home_imgcont{
+	margin-left: 70px; 
+	width: 150px;
+}
+#home_giftcard {
+	border-left: dashed 3px #1a1a1a;
+	width: 300px;
+	float: left;
+}
+#home_imggift {
+	margin-left: 72px; 
+	width: 150px;
+}
+/* -------------------- home ends here --------------------------*/
+
+/* -------------------  About page starts here - Add by Jacqueline  --------------*/
+
+#about_image{
+	padding-bottom:50px;
+
+}
+
+#about_title{
+	text-align: center;
+	margin-top: -368px;
+}
+
+#about_title img{
+	width: 250px;
+}
+
+#about_left {
+	width:50%;
+	
+	display:inline-block;
+	vertical-align: top;
+	color: #808080;
+	line-height: 1.5em;
+	background-color:white;
+	margin-left:138px;
+	margin-top:60px;
+	padding:50px 100px;
+	border: dashed;
+	border-color:rgba(115, 154, 174, 0.41);
+
+}
+
+#about_left img {
+
+	margin-top:-79px;
+	margin-left:86px;
+	width:300px;
+
+}
+
+/* -------------------- About page ends --------------------------*/
+
+
+/* ----------  menu   --------------*/
+
+#menu_image{
+	padding-bottom:50px;
+
+}
+#food_menu{
+
+	padding-bottom:50px;
+}
+
+#menu_left {
+
+	margin-top:20px;
+
+	width:16%;
+	
+	background: url('../images/menu/menu-nav1.png') no-repeat top;
+	
+	
+	position:relative;
+	display:inline-block;
+	float:left;
+
+}
+
+#menu_left ul {
+	height:345px;
+	
+	margin-top: 70px;
+	padding-left:20px;
+
+}
+
+.food_item {
+	color:#808080;
+	text-decoration:none;
+
+
+}
+
+.food_item.active, .food_item:hover {
+	color:#cd6557;
+
+}
+
+#menu_left ul li {
+	text-decoration: none;
+	list-style-type: none;
+	border-bottom:solid;
+	border-color:#666;
+	border-width:1px;
+	padding-top:10px;
+	padding-bottom:10px;
+	width:90px;
+	font-family:sketch;
+	color:#808080;
+	font-size:12px;	
+}
+
+#menu_right {
+	width:75%;
+	display:inline-block;
+	float:right;	
+}
+
+.menu_brunch {
+	padding-left:0px;
+}
+
+.menu_brunch li {
+	list-style-type:none;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+/*-----brunch-----*/
+
+#b1 {
+
+}
+
+#b2 {
+
+	
+	
+}
+
+#b3 {
+	
+}
+
+#b4 {
+	padding-left:15px;
+	padding-top:20px;
+	
+}
+
+#b5 {
+	padding-top:30px;
+	
+}
+
+#b6 {
+
+	padding-top:20px;
+	
+}
+
+#b7 {
+
+	padding-left:80px;
+	padding-top:38px;
+	
+}
+
+#b8 {
+
+	padding-left:20px;
+	padding-top:17px;
+	padding-bottom:23px;
+	padding-top:60px;
+	
+}
+
+/*-----end of brunch-----*/
+/*-----dessert-----*/
+#d1 {
+
+	margin-left:15px;
+
+}
+
+#d2 {
+
+	
+	
+}
+
+#d3 {
+	
+}
+
+#d4 {
+	padding-left:15px;
+	padding-top:20px;
+	
+}
+
+#d5 {
+	padding-top:30px;
+	
+}
+
+#d6 {
+
+	padding-top:20px;
+	
+}
+
+#d7 {
+
+	padding-left:80px;
+	padding-top:38px;
+	
+}
+
+#d8 {
+
+	padding-left:20px;
+	padding-top:17px;
+	padding-bottom:23px;
+	padding-top:60px;
+	
+}
+/*-----end of dessert-----*/
+
+.menu_brunch li  #bp {
+	padding-left:80px;
+}
+
+.menu_brunch li p {
+	font-family:second_chances;
+	text-align:center;
+	margin:0 auto;
+	font-size:12px;
+	width:150px;
+	color:#666666;
+}
+
+.menu_brunch li p span {
+	font-family:sketch;
+	text-align:center;
+	font-size:24px;
+	margin:0 auto;
+	width:150px;
+	color:#666666;
+}
+.special_item {
+	color:#808080;
+	text-decoration:none;
+
+
+}
+
+
+/* --------------- End menu by Jacqueline -----------------*/
+/* --------------- Contest add by Reshma ------------------*/
+
+#special_left {
+
+	margin-top:46px;
+
+	width:16%;
+	
+	background: url('../images/menu/menu-nav1.png') no-repeat top;
+	
+	
+	position:relative;
+	display:inline-block;
+	float:left;
+
+}
+#special_left ul {
+	height:345px;
+	
+	margin-top: 70px;
+	padding-left:20px;
+
+}
+
+#special_left ul li {
+	text-decoration: none;
+	list-style-type: none;
+	border-bottom:solid;
+	border-color:#666;
+	border-width:1px;
+	padding-top:10px;
+	padding-bottom:10px;
+	width:90px;
+	font-family:sketch;
+	color:#808080;
+	font-size:12px;	
+}
+
+.special_item.active, .special_item:hover {
+	color:#cd6557;
+}
+
+#special_right{
+	display: inline-block;
+	width:75%;	
+	padding: 18px;
+}
+
+#game_icons{
+	text-align: center;
+}
+
+#game_icons li{
+	list-style-type: none;
+	display: inline-block;
+	border-radius: 55px;
+	width: 50px;
+	text-align: center;
+	height: 50px;
+}
+
+#game_icons li img{
+	/*width: 100%;*/
+}
+
+#play_icon{
+	background: #fdd69c;
+}
+
+#slot_machine{
+	background: url('../images/contest/frame.png') no-repeat;
+	width: 380px;
+	margin: 0 auto;
+	min-height: 370px;
+	padding: 54px 70px 0px 70px;
+}
+
+#slots_wrapper{
+	float: left;
+}
+.slots {
+	font-size:100px;
+	font-family:arial,helvetica,sans-serif;
+	overflow:hidden;
+	width:114px;
+	height:245px;
+	border-right: 10px solid transparent;
+	float:left;
+}
+
+.slots .wrapper{
+	width:100px;
+}
+
+.slots .slot{
+	width:100px;
+	height:100px;
+	text-align:center;
+
+}
+
+.img_wrapper{
+	width:115px;
+	height:245px;
+	text-align:center;
+	padding: 70px 0px;
+}
+
+.img_wrapper img{
+	width: 114px;
+}
+
+#btn_play
+{
+	text-align: center;
+}
+
+#btn_play input{
+	border: none;
+	background: url('../images/contest/button.png');	
+	width: 160px;
+	height: 48px;
+	color: transparent;
+	cursor: pointer;
+	margin-top: 110px;
+}
+
+#lbl_msg{
+	display: none;
+	text-align: center;
+	margin-top: 40px;
+	font-family: "texgyreheros";
+	font-size: 14px;
+	color:#8a8a8a;
+}
+
+#lbl_msg a{
+	color: #fcd59b;
+}
+
+#lbl_msg img{
+	width: 45px;
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+#lbl_msg span{
+	letter-spacing: 1px;
+}
+
+#game_title{
+	text-align: center;
+	margin-top: -431px;
+	margin-left: 103px;
+}
+
+#game_title img{
+	height: 44px;
+	margin-top: -250px;
+}
+#game_wrapper {
+	margin-top:65px;
+	width:711px;
+	margin-left:56px;
+	height: 555px;
+}
+
+#special{
+	min-height: 1280px;
+}
+
+/*98d4ef - win
+e6b8aa - giht
+fdd69c - game
+*/
+
+/* --------------- End Contest by Reshma ------------------*/
+
+
+/* -------------------- form Style Add by Jacqueline and Reshma --------------------------*/
+.form_mainWrapper{
+	height:347px;
+}
+
+.form_wrapper{	
+	text-align: center;
+	width: 800px;
+	margin: 0 auto;
+	border: dashed rgba(115, 154, 174, 0.41);
+	-moz-box-shadow: 5px 5px 5px #c8c8c8;
+	-webkit-box-shadow: 5px 5px 5px #c8c8c8;
+	box-shadow: 5px 5px 5px #c8c8c8;
+	background-color:#fff;
+	padding: 50px 0px;
+}
+
+.form_wrapper form{
+	display: inline-block;
+}
+/*.form1 {
+	width:313px;
+	float:left;
+	margin-left: 60px;
+	text-decoration:none;
+	border-right: dashed rgba(56, 44, 44, 0.45);
+	padding-right:0px;
+	margin-top:12px;
+}*/
+
+/*.form2 {
+	width:300px;
+	float:right;
+	margin-right: 60px;
+	padding-left:25px;
+	margin-top:12px;	
+}
+*/
+
+.form1{
+	border-right: dashed rgba(56, 44, 44, 0.2);
+	padding-right: 50px;
+	margin-right: 50px;
+}
+
+.form2{
+	vertical-align: top;
+}
+.form1, .form2{
+	display: inline-block;
+	width: auto;
+	text-align: left;
+}
+
+.form1 label, .form2 label {
+	/*float: left;*/
+	font-weight: bold;
+	color: rgba(56, 44, 44, 0.45);
+	font-size: 12px;
+	display: inline-block;
+	width: 95px;	
+	text-align: left;
+}
+
+.form2 label{
+	vertical-align: top;
+	margin-top: 7px;
+}
+textarea { 
+	border: none;
+	background: url('../images/contact/form_lines.png');
+}
+
+
+.clear { clear: both; }
+
+#contact_buttonWrapper
+{
+	text-align:center;
+	margin-top: 31px;
+}
+
+.boxline{
+	border-top: none; 
+	border-right: none; 
+	border-left: none; 
+	border-bottom: 1px solid rgba(56, 44, 44, 0.45); 
+	/*display: block;*/
+	margin-bottom: 10px;
+	width: 165px;
+	background-color:transparent;
+	color: #382C2C;
+}
+/*.boxline ::-moz-placeholder { color: #382C2C; }*/
+
+.boxline_label{
+	display: block;
+}
+
+input[type="submit"]
+{
+	font-family: "texgyreheros";
+	font-weight: 100;
+	border-radius: 11px;
+	border: 1px solid rgba(115, 154, 174, 0.70);
+	background-color: white;
+	color: rgba(115, 154, 174, 0.80);
+	width: 140px;
+	font-size: 20px;
+	padding: 5px;
+	cursor: pointer;
+}
+
+.form1 p
+{
+	color: rgba(56, 44, 44, 0.45);
+	display:inline;
+}
+
+/* -------------------- Form Style ends --------------------------*/
+
+/* ----------------Gift Card page starts here - Add by Nadia  --------------*/
+
+
+h1 {
+	font-size: 20px;
+	color:rgba(205, 101, 87, 0.40);
+	font-weight:bold;	
+	padding:0px 0px;
+
+}
+
+
+/*h3 {
+	font-size: 14px;
+	color:#8a8a8a;
+	text-decoration:none;
+	margin:2px 0 0 10px;
+
+}*/
+
+#gift_card_image{
+	padding-bottom:50px;
+
+}
+
+#gift_card_title{
+	text-align: center;
+	margin-top: -496px;
+	margin-left:123px;
+}
+
+#gift_card_title img{
+	width:250px;
+}
+
+#gift_card_left img {
+
+	margin-top:-200px;
+	margin-left:86px;
+	width:500px;
+
+}
+
+#gift_form1 .form1, #gift_form1 .form2{
+	margin: 0px;
+}
+
+#gift_form1 .form_wrapper{
+	width: 711px;
+	margin-left: 57px;
+	margin-top: 65px;
+}
+
+#gift_form1 .form1{
+	/*margin-left: 31px;*/
+	border-color: rgba(56, 44, 44, 0.1);	
+	text-align: left;
+	padding-right: 15px;
+	margin-right: 22px;
+}
+
+ label.cbLabel{
+ 	width: 31px;
+ }
+
+
+
+#gift_form1 .form2{
+	/*margin-right: 12px;*/
+}
+.clear { clear: both; }
+
+/* -------------------- Gift Card page ends --------------------------*/
+
+/* -------------------- Event Page Add by Shalini --------------------------*/
+
+h2.ss-subtitle {
+	margin-top: 274px;
+	/*color:rgba(205, 101, 87, 0.28);*/
+	margin-bottom: 0px;
+}
+h2.ss-subtitle:before {
+	background: rgba(17,17,22,0.5);
+}
+h2.ss-subtitle:after {
+	border-bottom: 4px dotted rgba(17,17,22,0.5);
+}
+#event_title{
+	text-align: center;
+	margin-top: -472px;
+	margin-left:-10px;
+}
+
+#event_title img{
+	width:264px;
+}
+
+#event_form .form_mainWrapper {
+	margin-top: 71px;
+
+}
+
+#event_form .form_wrapper{
+	border: dashed rgba(205, 101, 87, 0.28);
+}
+
+h3 p{
+	color: #fff;
+	margin: 10px 0px;
+}
+
+
+.ss-container h3{
+	background: rgba(205, 101, 87, 0.28);
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(26, 27, 33, 0.4);
+}
+
+.ss-container h3 span {
+	color: #fff;
+}
+
+.ss-container:before {
+	background: rgba(17, 17, 22, 0.5);
+}
+
+/*#event_form input[type="submit"]
+{
+	border-radius: 16px;
+	border: none;
+	
+	background-color: white;
+	
+	width: 100;
+	font-size: 20px;
+	padding: 8px 20px;
+	background-color:transparent;
+	margin-top:20px;
+
+	color: #739aae;
+	border: 2px solid #739aae;
+
+
+}*/
+
+/* -------------------- Event page ends --------------------------*/
+
+
+
+
+/* -------------------- Contact page starts here --------------------------*/
+
+#contact_image{
+	margin-bottom: 65px;
+}
+
+#contact_title{
+	text-align: center;
+	margin-top: -297px;
+}
+
+#contact_title img{
+	width: 250px;
+}
+
+.contact-h3 {
+	color: #6c9bb0 ;
+}
+#contact_map p {
+	color: #8a8a8a;
+	line-height:1.5em;
+
+}
+/*
+#contact_map{	
+	float: left;
+	padding: 7px;
+	margin-top:93px;	
+}*/
+
+#map_canvas { width: 100%; 
+			  height: 400px; 
+			  width: 300px; 
+			  float: left; 
+			  position: 
+			  relative; 
+			  z-index: 30 !important; }
+
+#locations { list-style: none; 
+			 width: 250px; 
+			 float: left;  
+			 color:#8a8a8a;}
+#locations li { padding: 10px; 
+				width: 800px; 
+				float: left; position: 
+				relative; z-index: 20; }
+#locations li:hover, #locations li.hover { background: #fff  128px 0 repeat-y; }
+#locations li:hover h3, #locations li.hover h3 { color: #6c9bb0; text-shadow: 0 1px 0px rgba(255,255,255,0.3); }
+
+
+#content { width: 300px; }
+
+#more-info { width: 340px; float: right; background: #fff; padding: 20px; height: 360px; }
+#more-info * { position: relative; z-index: 40; }
+#more-info h2 {color:#6c9bb0;
+				padding-bottom:20px;}
+#more-info > div { background: #fff; -moz-box-shadow: 0 0 14px rgba(70,49,1,0.5); -webkit-box-shadow: 0 0 14px rgba(70,49,1,0.5); padding: 20px; height: 320px; }
+.longdesc { display: none; }
+
+
+
+/* -------------------- Contact page ends --------------------------*/
+
